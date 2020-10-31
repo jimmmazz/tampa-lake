@@ -352,6 +352,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: .5rem;
+  margin-bottom: 1rem;
 }
 
 /* Gallary Section */
@@ -370,6 +371,7 @@ a {
 }
 
 .gallery-header  {
+  display: flex;
     color: #fff;
     width: 100%;
     padding-bottom: 2rem;
@@ -444,6 +446,9 @@ a {
 #footer {
     background-color: var(--primary-color);
     color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-content {
