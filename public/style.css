@@ -46,7 +46,7 @@ a {
 /* Layout ******************************************************** */
 .container {
   margin: auto;
-  max-width: 1500px; 
+  max-width: 1200px; 
   padding: .5rem 1rem;
 }
 
@@ -462,10 +462,15 @@ background-color: var(--secondary-color);
     display: initial;
   }
 
+  #hero {
+    height: auto;
+  }
+
   .hero {
     padding: 2rem 1rem;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 60% 40%;
+    grid-template-rows: 70% 30%;
+    height: 500px;
   }
 
   .hero-img-wrapper {
@@ -493,7 +498,7 @@ background-color: var(--secondary-color);
 
   .btn-wrapper {
     grid-row: 2/-1;
-    grid-column: 2/-1;
+    grid-column: 1/-1;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -501,15 +506,40 @@ background-color: var(--secondary-color);
 
   .hero-btn,
   .hero-btn--photos {
-    font-size: 1.15rem;
+    font-size: 1rem;
     align-self: center;
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
   } 
 
  .hero-btn--photos {
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    margin-right: 1rem;
   }
 }
 
+/* *********************************************** */
+/* ************Media Query GT 1100***************** */
+/* *********************************************** */
+
+@media only screen and (min-width: 760px) {
+  .hero {
+    padding: 2rem 1rem;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 50% 50%;
+    height: calc(100vh - 50px);
+  }
+
+  .hero-img-wrapper {
+      grid-column: 2/-1;
+  }
+
+  .hero-heading {
+    font-size: 3.5rem;
+  }
+
+  .btn-wrapper {
+    grid-column: 2/-1;
+  }
+}
