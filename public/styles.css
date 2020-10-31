@@ -20,6 +20,10 @@ body {
     font-size:100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Utilities */
 .btn {
     display: inline-block;
@@ -28,10 +32,6 @@ body {
     border-radius: 5px;
     padding: 15px 30px;
     cursor: pointer;
-}
-
-.btn a {
-    color: red;
 }
 
 .card {
@@ -658,6 +658,6 @@ nav {
     }
 
     .footer-content {
-        padding: 1rem;
+        padding: 1rem .5rem;
     }
 }
