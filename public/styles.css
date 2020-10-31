@@ -246,10 +246,6 @@ nav {
     /* transform: scale(0, 0); */
 }
 
-.show > .card-contact {
-    /* transform: scale(1, 1); */
-}
-
 .card-contact p {
     font-size: 1.7rem;
     margin-bottom: 1rem;
@@ -635,6 +631,7 @@ nav {
     .gallery-img {
         height: 300px;
         width:  100%;
+        box-shadow: 5px 5px 13px rgba(0,0,0,.2);
     }
 
     .gallery-title {
@@ -653,5 +650,14 @@ nav {
 
     .gallery-container {
         grid-template-columns: 1fr;
+    }
+
+    #footer {
+        background-color: var(--primary-color);
+        color: var(--light-color);
+    }
+
+    .footer-content {
+        padding: 1rem;
     }
 }
