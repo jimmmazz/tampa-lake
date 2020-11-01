@@ -584,9 +584,11 @@ background-color: var(--secondary-color);
 /* Hero */
   #hero {
     height: calc(100vh - 70px);
+    padding-top: 5rem;
   }
   .btn-wrapper {
     align-self: center;
+    padding-bottom: 10rem;
   }
 
   .hero-heading {
@@ -595,6 +597,10 @@ background-color: var(--secondary-color);
 
   .hero-subheading {
     font-size: 1.5rem;
+  }
+
+  .hero-img-wrapper {
+    height: 80%;
   }
 
   .hero-btn {
