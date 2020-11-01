@@ -622,6 +622,7 @@ background-color: var(--secondary-color);
     grid-row: 2/3;
     grid-column: 1/2;
     align-self: start;
+    padding-right: 1rem;
   }
 
   .card-what-where h3 {
@@ -639,6 +640,7 @@ background-color: var(--secondary-color);
     grid-row: 2/-1;
     grid-column: 2/3;
     align-self: start;
+    background-size: cover;
   }
 
 /* Gallery */
@@ -653,7 +655,7 @@ background-color: var(--secondary-color);
     width: 100%;
     padding-bottom: 2rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .gallery-title {
@@ -661,5 +663,19 @@ background-color: var(--secondary-color);
     padding: 2rem 0;
     writing-mode: vertical-lr;
     text-orientation: upright ;
+  }
+
+/* Footer */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-content p {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
   }
 }
