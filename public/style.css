@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #40798c;
+  --primary-color: rgba(64, 121, 140, .75);
+  /* --primary-color: #40798c; */
   --secondary-color:#9ec1a3 ;
   --accent-color:#70a9a1 ;
   --dark-color: #1f363d;
@@ -395,7 +396,14 @@ background-color: var(--secondary-color);
     height: 300px;
     width:  100%;
     box-shadow: 5px 5px 13px rgba(0,0,0,.2);
+    border-radius: 5px;
     cursor: pointer;
+  transition: all 200ms ease;
+
+}
+
+.gallery-img:hover {
+  transform: scale(.95);
 }
 
 .gallery-title {
