@@ -105,6 +105,11 @@ a {
   text-transform: uppercase;
 }
 
+.footer-content .nav-link {
+  color: #fff;
+
+}
+
 /* Hero Section **************************************************** */
 #hero {
   background-color: var(--primary-color);
@@ -567,7 +572,19 @@ background-color: var(--secondary-color);
 /* *********************************************** */
 
 @media only screen and (min-width: 1000px) {
+/* Nav */
+  #nav {
+    height: 70px;
+  }
+
+  .logo {
+    font-size: 2.25rem;
+  }
+
 /* Hero */
+  #hero {
+    height: calc(100vh - 70px);
+  }
   .btn-wrapper {
     align-self: center;
   }
@@ -594,7 +611,7 @@ background-color: var(--secondary-color);
   .what-where-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 20% 80%;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -632,14 +649,15 @@ background-color: var(--secondary-color);
   }
   
   .card-what-where p {
-    font-size: 1.25rem;
-    margin-top: .25rem;
+    font-size: 1.5rem;
+    margin-top: .5rem;
   }
 
   .what-where-img {
     grid-row: 2/-1;
     grid-column: 2/3;
     align-self: start;
+    height: 600px;
     background-size: cover;
   }
 
@@ -677,5 +695,14 @@ background-color: var(--secondary-color);
     display: inline-block;
     font-size: 2rem;
     padding: 1rem;
+  }
+
+  .footer-content .nav-link {
+    font-size: 1rem;
+  }
+
+  .footer-content .nav-link span {
+    font-weight: 600;
+    color: yellow;
   }
 }
