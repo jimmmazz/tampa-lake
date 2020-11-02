@@ -140,6 +140,7 @@ a {
     width: 100%;
     color: #fff;
     z-index: 101;
+    position: relative;
 }
 
 .hero-heading {
@@ -196,6 +197,10 @@ a {
     margin-bottom: 1rem;
     box-shadow: 5px 2px 10px rgba(0,0,0,.72);
     transition: 200ms ease-out;
+}
+
+.hero-btn {
+  width: 50%;
 }
 
 .hero-btn--photos {
